@@ -1,0 +1,56 @@
+{
+  "uid" : "3e2853d7aeaa75db",
+  "name" : "adding3Items",
+  "fullName" : "CartPageTest.adding3Items",
+  "historyId" : "7d3101cdff9ae8fe21a410fd4ddceed6",
+  "time" : {
+    "start" : 1682354058781,
+    "stop" : 1682354096871,
+    "duration" : 38090
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : ""
+  }, {
+    "name" : "testClass",
+    "value" : "CartPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "adding3Items"
+  }, {
+    "name" : "suite",
+    "value" : "CartPageTest"
+  }, {
+    "name" : "host",
+    "value" : "Anastasiias-MacBook-Air.local"
+  }, {
+    "name" : "thread",
+    "value" : "1173@Anastasiias-MacBook-Air.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3e2853d7aeaa75db.json",
+  "parameterValues" : [ ]
+}

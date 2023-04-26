@@ -1,0 +1,56 @@
+{
+  "uid" : "2ad7fe73e6efe5fe",
+  "name" : "checkLogoutLink",
+  "fullName" : "InventoryTests.checkLogoutLink",
+  "historyId" : "b8eddec8def712175b84db364a9b57b3",
+  "time" : {
+    "start" : 1682354175304,
+    "stop" : 1682354188087,
+    "duration" : 12783
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : ""
+  }, {
+    "name" : "testClass",
+    "value" : "InventoryTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkLogoutLink"
+  }, {
+    "name" : "suite",
+    "value" : "InventoryTests"
+  }, {
+    "name" : "host",
+    "value" : "Anastasiias-MacBook-Air.local"
+  }, {
+    "name" : "thread",
+    "value" : "1173@Anastasiias-MacBook-Air.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2ad7fe73e6efe5fe.json",
+  "parameterValues" : [ ]
+}

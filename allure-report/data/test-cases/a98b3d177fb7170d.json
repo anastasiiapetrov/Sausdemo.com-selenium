@@ -1,0 +1,56 @@
+{
+  "uid" : "a98b3d177fb7170d",
+  "name" : "emptyCart",
+  "fullName" : "CartPageTest.emptyCart",
+  "historyId" : "1d3e2c91acbff28c97f8c51971cab9a1",
+  "time" : {
+    "start" : 1682354097032,
+    "stop" : 1682354119990,
+    "duration" : 22958
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : ""
+  }, {
+    "name" : "testClass",
+    "value" : "CartPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "emptyCart"
+  }, {
+    "name" : "suite",
+    "value" : "CartPageTest"
+  }, {
+    "name" : "host",
+    "value" : "Anastasiias-MacBook-Air.local"
+  }, {
+    "name" : "thread",
+    "value" : "1173@Anastasiias-MacBook-Air.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a98b3d177fb7170d.json",
+  "parameterValues" : [ ]
+}

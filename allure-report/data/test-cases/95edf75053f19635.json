@@ -1,0 +1,88 @@
+{
+  "uid" : "95edf75053f19635",
+  "name" : "successAdding1Item",
+  "fullName" : "CartPageTest.successAdding1Item",
+  "historyId" : "7d8acaee5fd02742080e88ea93c9b7ab",
+  "time" : {
+    "start" : 1682356307925,
+    "stop" : 1682356318299,
+    "duration" : 10374
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : ""
+  }, {
+    "name" : "testClass",
+    "value" : "CartPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "successAdding1Item"
+  }, {
+    "name" : "suite",
+    "value" : "CartPageTest"
+  }, {
+    "name" : "host",
+    "value" : "Anastasiias-MacBook-Air.local"
+  }, {
+    "name" : "thread",
+    "value" : "1798@Anastasiias-MacBook-Air.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "ec39d1bc9d72ab",
+      "status" : "passed",
+      "time" : {
+        "start" : 1682356079254,
+        "stop" : 1682356091737,
+        "duration" : 12483
+      }
+    }, {
+      "uid" : "1ea250cd7fc1a446",
+      "status" : "passed",
+      "time" : {
+        "start" : 1682354714175,
+        "stop" : 1682354726152,
+        "duration" : 11977
+      }
+    }, {
+      "uid" : "e90c62ae2ef65105",
+      "status" : "passed",
+      "time" : {
+        "start" : 1682354473580,
+        "stop" : 1682354484068,
+        "duration" : 10488
+      }
+    }, {
+      "uid" : "9969475425a44b84",
+      "status" : "passed",
+      "time" : {
+        "start" : 1682354119998,
+        "stop" : 1682354128824,
+        "duration" : 8826
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "95edf75053f19635.json",
+  "parameterValues" : [ ]
+}
