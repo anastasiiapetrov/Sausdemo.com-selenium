@@ -1,12 +1,8 @@
 import org.junit.After;
 import org.junit.Before;
-import org.junit.Rule;
-import org.junit.runner.Description;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.junit.rules.TestWatcher;
+
 
 import java.time.Duration;
 
@@ -48,6 +44,8 @@ public class BaseTest {
            }
        }
     }*/
+
+
 
 
 

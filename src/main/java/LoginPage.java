@@ -40,16 +40,19 @@ public class LoginPage extends BasePage {
         super(driver);
     }
 
-    public void enterValueUserName (User user){
+    public LoginPage enterValueUserName (User user){
         enterTextToElement(user.getUsername(), userName);
+        return this;
     }
 
-    public void enterValuePassword(User user){
+    public LoginPage enterValuePassword(User user){
         enterTextToElement(user.getPassword(), password);
+        return this;
     }
 
-    public void pushLoginButton(){
+    public InventoryPage pushLoginButton(){
         clickOnTheElement(loginButton);
+        return new InventoryPage(driver);
 
     }
 

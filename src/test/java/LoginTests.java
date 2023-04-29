@@ -11,12 +11,16 @@ public class LoginTests extends BaseTest{
         User validUser = new User(validUserName, validPassword);
         loginPage.enterValueUserName(validUser);
         loginPage.enterValuePassword(validUser);
-        loginPage.pushLoginButton();
+       assertTrue(loginPage.pushLoginButton().inventoryContainerIsDisplayed()); //заменили нижние строки на это
+
+      //  loginPage.enterValueUserName(validUser)
+        //                .enterValuePassword(validUser)
+        //                        .pushLoginButton(); second version how to write it or how above - цепочка методов
 
 
         assertTrue(driver.getCurrentUrl().contains("inventory"));
-        InventoryPage inventoryPage = new InventoryPage(driver);
-        assertTrue(inventoryPage.inventoryContainerIsDisplayed());
+       // InventoryPage inventoryPage = new InventoryPage(driver);
+       // assertTrue(inventoryPage.inventoryContainerIsDisplayed());
     }
 
 
