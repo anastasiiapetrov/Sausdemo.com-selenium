@@ -44,7 +44,7 @@ public class LoginTests extends BaseTest{
         assertTrue(loginPage.getErrorMessageText().contains("Username and password do not match any user in this service"));
     }
 
-
+@Test
     public void elementsAreDisplayed(){
         LoginPage loginPage = new LoginPage(driver);
         assertTrue(loginPage.headerIsVisible());

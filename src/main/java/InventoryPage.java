@@ -3,9 +3,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 
-import java.time.Duration;
-import java.util.List;
+import java.util.*;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 public class InventoryPage extends BasePage{
@@ -45,6 +45,13 @@ public class InventoryPage extends BasePage{
 
     @FindBy(xpath = "//option[@value='hilo']")
     private WebElement sortPriceHighToLow;
+
+    @FindBy(className = "inventory_item_price")
+    private List<WebElement> inventoryPrices;
+
+    @FindBy(className = "inventory_item_name")
+    private List<WebElement> inventoryName;
+
 
     @FindBy(xpath = "//div[@class='inventory_item_name'][1]")
     WebElement firstItemName;
@@ -98,9 +105,53 @@ public class InventoryPage extends BasePage{
         sortNameZtoA.click();
     }
     public void clickOnSortPriceLowToHigh(){
-        productSortContainer.click();
-        sortPriceLowToHigh.click();
+        clickOnTheElement(productSortContainer);
+        clickOnTheElement(sortPriceLowToHigh);
+       // productSortContainer.click();
+       // sortPriceLowToHigh.click();
     }
+
+    public boolean checkFromLowToHigh(){
+        List<Double> actualPrices = new ArrayList<Double>();
+        for (WebElement price:inventoryPrices) {
+       actualPrices.add(Double.parseDouble(price.getText().replaceAll("[^0-9.]", "")));
+        }
+        List<Double> expectedPrices = new ArrayList<Double>(actualPrices);
+        Collections.sort(expectedPrices);
+        return actualPrices.equals(expectedPrices);
+    }
+
+    public boolean checkFromHighToLow(){
+        List<Double> actualPrices = new ArrayList<Double>();
+        for (WebElement price:inventoryPrices) {
+            actualPrices.add(Double.parseDouble(price.getText().replaceAll("[^0-9.]", "")));
+        }
+        List<Double> expectedPrices = new ArrayList<Double>(actualPrices);
+        expectedPrices.sort(Collections.reverseOrder());
+        return actualPrices.equals(expectedPrices);
+    }
+
+    public boolean checkFormAtoZ(){
+        List<String> actualName = new ArrayList<String>();
+        for (WebElement name:inventoryName) {
+            actualName.add(name.getText());
+        }
+        List<String> expectedName = new ArrayList<String>(actualName);
+        Collections.sort(expectedName);
+        return actualName.equals(expectedName);
+    }
+
+    public boolean checkFormZtoA(){
+        List<String> actualName = new ArrayList<String>();
+        for (WebElement name:inventoryName) {
+            actualName.add(name.getText());
+        }
+        List<String> expectedName = new ArrayList<String>(actualName);
+        expectedName.sort(Collections.reverseOrder());
+        return actualName.equals(expectedName);
+    }
+
+
     public void clickOnSortPriceHighToLow(){
         productSortContainer.click();
         sortPriceHighToLow.click();

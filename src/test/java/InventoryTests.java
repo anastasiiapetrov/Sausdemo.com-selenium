@@ -96,6 +96,57 @@ public class InventoryTests extends BaseTest {
         assertEquals("$49.99",  inventoryPage.firstItemPrice.getText());
     }
 
+    @Test
+    public void secondOptionLowToHigh(){
+    LoginPage loginPage = new LoginPage(driver);
+    User validUser = new User(validUserName, validPassword);
+        loginPage.successLogin(validUser);
 
+    InventoryPage inventoryPage = new InventoryPage(driver);
+    inventoryPage.clickOnSortPriceLowToHigh();
+    assertTrue(inventoryPage.checkFromLowToHigh());
 
 }
+    @Test
+    public void secondOptionHighToLow(){
+        LoginPage loginPage = new LoginPage(driver);
+        User validUser = new User(validUserName, validPassword);
+        loginPage.successLogin(validUser);
+
+        InventoryPage inventoryPage = new InventoryPage(driver);
+        inventoryPage.clickOnSortPriceHighToLow();
+        assertTrue(inventoryPage.checkFromHighToLow());
+
+    }
+
+    @Test
+    public void secondOptionAToZ(){
+        LoginPage loginPage = new LoginPage(driver);
+        User validUser = new User(validUserName, validPassword);
+        loginPage.successLogin(validUser);
+
+        InventoryPage inventoryPage = new InventoryPage(driver);
+        inventoryPage.clickOnSortNameAtoZ();
+        assertTrue(inventoryPage.checkFormAtoZ());
+    }
+
+    @Test
+    public void secondOptionZtoA(){
+        LoginPage loginPage = new LoginPage(driver);
+        User validUser = new User(validUserName, validPassword);
+        loginPage.successLogin(validUser);
+
+        InventoryPage inventoryPage = new InventoryPage(driver);
+        inventoryPage.clickOnSortNameAtoZ();
+        assertTrue(inventoryPage.checkFormZtoA());
+    }
+
+
+
+
+    }
+
+
+
+
+
